@@ -1,0 +1,58 @@
+#if条件：代码
+#如果条件成立就执行代码，不成立就不执行
+#第一种
+money=500
+if money>300:#注意要带冒号
+    print(123)
+    print(456)#用缩进将这两行代码与if语句相连 没有缩进则断开
+#若此处if不成立则不运行代码,跳过运行下面的print
+print('回家')
+#第二种
+#if条件：
+# 代码1
+#else:
+#代码2
+#如果条件成立，执行代码1，否则，执行代码2
+money=input('请输入你兜里的钱：')
+money=int(money)
+if money>500:
+    print('出去旅游')
+else:
+    print('回家吃饭')
+#第三种
+#if语句可以互相嵌套
+#if条件：
+#  代码1
+#   if。。。。。。
+#   else。。。。。
+#else：
+#   代码2
+#例子
+money=int(input('请输入你兜里的钱'))
+if money>1000:
+    if money>5000:
+      print('充个会员卡')
+    else:
+        print('不办会员卡，只买东西')
+else:
+    print(回家)
+#第四种
+#if条件1：
+#   代码1
+#elif条件2：
+#   代码2
+#elif条件3：
+#   代码2
+#.......
+#else:
+#  ......
+money=int(input('请输入你兜里的钱'))
+if money>1000:
+    print('办卡')
+elif money>500:
+    print('只买东西')
+elif money>100:
+    print('看看就走')
+else:
+    print('回家')
+#else，elif不可以单独使用
